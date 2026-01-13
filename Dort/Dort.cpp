@@ -177,7 +177,7 @@ int main()
 
     while (true)
     {
-        // Key toggles
+        
         if (GetAsyncKeyState('1') & 1)  // 1 toggles flying
         {
             globals::movement::flying = !globals::movement::flying;
@@ -310,3 +310,4 @@ static std::tm timet_to_tm(time_t timestamp) {
     localtime_s(&context, &timestamp);
     return context;
 }
+
